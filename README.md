@@ -50,19 +50,6 @@ This repository provides an analysis of Large Language Models (LLMs) for key NLP
 
 ---
 
-## Results Summary
-
-| **Task**                | **Best Model** | **Metric**         | **Score**           |
-|--------------------------|----------------|--------------------|---------------------|
-| Document Classification  | DistilBERT     | F1 (AG News)       | 0.9462              |
-|                          | BERT           | F1 (20 Newsgroups) | 0.9214              |
-| Text Summarization       | T5             | ROUGE-1 (CNN/DM)   | 0.4245              |
-|                          | T5             | ROUGE-1 (XSUM)     | 0.3477              |
-| Question Answering       | BERT           | EM (SQuAD v1)      | 0.7962              |
-|                          | T5             | EM (SQuAD v2)      | 0.7063              |
-
----
-
 ## Analysis
 
 1. **Task Complexity**:
