@@ -1,0 +1,83 @@
+Datasets:-
+1. Xsum 
+2. cnn_news
+
+Model:- 
+1. bart
+2. T5
+
+
+BART + Xsum results :- 
+  Epoch 1/3
+  Average training loss: 0.7677
+  Average validation loss: 0.4915
+  Epoch 2/3
+  Average training loss: 0.4532
+  Average validation loss: 0.4926
+  Epoch 3/3
+  Average training loss: 0.3677
+  Average validation loss: 0.5186
+  /data2/home/umangs/miniconda3/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:4114: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+    warnings.warn(
+  Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+  You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+  Evaluation Metrics:
+  rouge1: 0.3361569083497893
+  rouge2: 0.12446990852620507
+  rougeL: 0.2685304041536015
+  bert_precision: 0.9020728373527527
+  bert_recall: 0.8924301735162735
+  bert_f1: 0.8971203493475914
+
+BART + cnn_daily results :- 
+  ROUGE Scores:
+  ROUGE-1: 0.3501
+  ROUGE-2: 0.1527
+  ROUGE-L: 0.2633
+  bert_precision: 0.903827199888229
+  bert_recall: 0.8728114884915715
+  bert_f1: 0.892198377361471
+
+T5 + xsum results :- 
+  Epoch 1/3
+  Average training loss: 0.5759
+  Average validation loss: 0.4754
+  Epoch 2/3
+  Average training loss: 0.4864
+  Average validation loss: 0.4680
+  Epoch 3/3
+  Average training loss: 0.4504
+  Average validation loss: 0.4657
+  Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+  You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+  Evaluation Metrics:
+  rouge1: 0.3477113900939369
+  rouge2: 0.13183021613791263
+  rougeL: 0.27785945636927645
+  bert_precision: 0.9064128229719988
+  bert_recall: 0.8931117676615715
+  bert_f1: 0.8995984884917736
+
+
+T5 + cnn_daily :- 
+  Epoch 1/3
+  Average training loss: 0.9534
+  Average validation loss: 0.9899
+  Epoch 2/3
+  Average training loss: 0.8692
+  Average validation loss: 0.9959
+  Epoch 3/3
+  Average training loss: 0.8213
+  Average validation loss: 1.0082
+  Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+  You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+  Evaluation Metrics:
+  rouge1: 0.4245520802216458
+  rouge2: 0.20742380973758473
+  rougeL: 0.3045535177927645
+  bert_precision: 0.8882303319215774
+  bert_recall: 0.8865996371984481
+  bert_f1: 0.8872794809877872
